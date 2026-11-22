@@ -189,7 +189,7 @@ test('escapeHtml: escapes all five entities', () => {
 test('renderMarkdown: escapes HTML before applying markdown', () => {
   const out = renderMarkdown('<script>alert(1)</script>');
   // The <script> tag must not survive literally.
-  assert.ok(!/<script>/.test(out));
+  assert.ok(!/<script>/i.test(out));
   assert.ok(/&lt;script&gt;/.test(out));
 });
 
