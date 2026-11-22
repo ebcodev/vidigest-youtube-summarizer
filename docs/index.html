@@ -60,24 +60,6 @@
     box-shadow: 0 24px 60px rgba(0,0,0,0.45);
   }
   .demo img { display: block; width: 100%; height: auto; }
-  .shots {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 12px;
-    margin: 24px 0 48px;
-  }
-  .shots a {
-    display: block;
-    border-radius: 12px;
-    overflow: hidden;
-    border: 1px solid var(--border);
-    transition: transform 0.15s ease, border-color 0.15s ease;
-  }
-  .shots a:hover {
-    transform: translateY(-2px);
-    border-color: var(--accent);
-  }
-  .shots img { display: block; width: 100%; height: auto; }
   .grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -151,17 +133,6 @@
     <img src="demo.gif" alt="Vidigest YouTube Summarizer in action" loading="lazy">
   </div>
 
-  <div class="shots">
-    <a href="https://raw.githubusercontent.com/ebcodev/vidigest-youtube-summarizer/main/store-assets/screenshots/screenshot-1-hero.png" target="_blank">
-      <img src="https://raw.githubusercontent.com/ebcodev/vidigest-youtube-summarizer/main/store-assets/screenshots/screenshot-1-hero.png" alt="Hero" loading="lazy">
-    </a>
-    <a href="https://raw.githubusercontent.com/ebcodev/vidigest-youtube-summarizer/main/store-assets/screenshots/screenshot-2-summary.png" target="_blank">
-      <img src="https://raw.githubusercontent.com/ebcodev/vidigest-youtube-summarizer/main/store-assets/screenshots/screenshot-2-summary.png" alt="Summary panel" loading="lazy">
-    </a>
-    <a href="https://raw.githubusercontent.com/ebcodev/vidigest-youtube-summarizer/main/store-assets/screenshots/screenshot-3-byom.png" target="_blank">
-      <img src="https://raw.githubusercontent.com/ebcodev/vidigest-youtube-summarizer/main/store-assets/screenshots/screenshot-3-byom.png" alt="Bring Your Own Model" loading="lazy">
-    </a>
-  </div>
 
   <div class="grid">
     <div class="card"><h3>🧠 Bring your own model</h3><p>Swap between Anthropic, OpenAI, Gemini, and Ollama in Settings. Your key, your choice.</p></div>

@@ -75,11 +75,7 @@ English (United States)
 
 ## Screenshots (required — upload 1 to 5)
 
-Uploaded to `store-assets/screenshots/` in this repo:
-
-1. `screenshot-1-hero.png` — product overview / hero shot.
-2. `screenshot-2-summary.png` — side panel open on a real video, showing TL;DR / Key Points / Takeaways.
-3. `screenshot-3-byom.png` — Settings page, provider dropdown visible (blur or redact the API key).
+None are kept in this repo; capture them when submitting. Suggested shots: the side panel open on a real video, a multi-part summary showing the pager, and the Settings page (blur or redact the API key).
 
 Chrome Web Store required dimensions: **1280×800** or **640×400**, PNG or JPG.
 

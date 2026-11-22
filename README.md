@@ -7,7 +7,7 @@ A Chrome/Brave extension that summarizes YouTube videos with your choice of LLM:
 [![Manifest V3](https://img.shields.io/badge/Manifest-V3-blue.svg)](https://developer.chrome.com/docs/extensions/mv3/intro/)
 [![Providers](https://img.shields.io/badge/Providers-4-green.svg)](#providers)
 
-> Screenshots are from an earlier UI. The panel now also has a pager for multi-part summaries and a minimize button.
+> The demo is from an earlier UI. The panel now also has a pager for multi-part summaries and a minimize button.
 
 ![Demo](store-assets/screenshots/demo.gif)
 
