@@ -8,8 +8,6 @@ A Chrome/Brave extension that summarizes YouTube videos with your choice of LLM:
 
 ![Demo](store-assets/screenshots/demo.gif)
 
-<sub>The demo shows an earlier UI; the panel now also has a pager and a minimize button.</sub>
-
 ## Features
 
 - **TL;DR, Key Points and Takeaways**, written in the video's language. Every key point ends with a `[m:ss]` link that jumps the video to that moment.
