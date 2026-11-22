@@ -1,0 +1,65 @@
+{
+  "manifest_version": 3,
+  "name": "Vidigest YouTube Summarizer",
+  "short_name": "Vidigest Summarizer",
+  "version": "1.4.0",
+  "description": "Summarize YouTube videos with Claude, GPT, Gemini, or Ollama. Multi-modal. TL;DR, key points, takeaways. BYO API key.",
+  "author": "Vidigest",
+  "homepage_url": "https://ebcodev.github.io/vidigest-youtube-summarizer/",
+  "permissions": [
+    "storage"
+  ],
+  "host_permissions": [
+    "https://www.youtube.com/*",
+    "https://i.ytimg.com/*",
+    "https://api.anthropic.com/*",
+    "https://api.openai.com/*",
+    "https://generativelanguage.googleapis.com/*",
+    "http://localhost/*",
+    "http://127.0.0.1/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.youtube.com/*"
+      ],
+      "js": [
+        "page-bridge.js"
+      ],
+      "run_at": "document_start",
+      "world": "MAIN"
+    },
+    {
+      "matches": [
+        "https://www.youtube.com/*"
+      ],
+      "js": [
+        "lib/parsers.js",
+        "content.js"
+      ],
+      "css": [
+        "content.css"
+      ],
+      "run_at": "document_idle"
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Vidigest YouTube Summarizer",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "options_page": "options.html",
+  "minimum_chrome_version": "111"
+}
